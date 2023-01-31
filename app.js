@@ -6,19 +6,19 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.send("about page is working");
+    res.sendFile(__dirname + "/views/about.html");
 });
 
 app.get("/home", (req, res) => {
-    res.send("home page is working");
+    res.sendFile(__dirname + "/views/home.html");
 });
 
 app.get("/works", (req, res) => {
-    res.send("works page is working");
+    res.sendFile(__dirname + "/views/works.html");
 });
 
 app.get("/gallery", (req, res) => {
-    res.send("gallery page is working");
+    res.sendFile(__dirname + "/views/gallery.html");
 });
 
 app.listen(3000, () => {
